@@ -34,13 +34,12 @@ sub setContent()
   m.Image.uri="pkg:/images/srvbc-logo.png"
   ContentNode = CreateObject("roSGNode", "ContentNode")
   ContentNode.streamFormat = "hls"
-  ContentNode.url = "http://live.srvbc.org/hls/live2.m3u8"
+  ContentNode.url = "http://live.srvbc.org/hls/live.m3u8"
   ContentNode.ShortDescriptionLine1 = "SRVBC Live Meetings"
   ContentNode.Description = "Live Stream for SRVBC Meetings"
   ContentNode.StarRating = 80
   ContentNode.Length = 1972
   ContentNode.Title = "SRVBC Live Meetings"
-  ContentNode.subtitleConfig = {Trackname: "pkg:/source/CraigVenter.srt" }
 
   m.Video.content = ContentNode
 
